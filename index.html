@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bfa72dd94.js" crossorigin="=anonymous"></script>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <i class="fa-solid fa-n"></i>
+                <div class="logo-text"><span id="n">N</span>ykosh</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</span></a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certs">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div id="header" class="hero-header">
+    <div class="wrapper">
+        <div class="container">
+            <div class="hero-pic">
+                <img src="aa.jpg">
+            </div>
+            <div class="hero-text">
+                <p id="open" style="position: relative;">Hi! I am</p>
+                <h1 id="name"><span id="span">N</span>ykosh</h1>
+                <br>
+                <p>
+                    Aspiring <span class="input"></span>
+                </p>
+                <div class="social">
+                     <a href="https://www.youtube.com/@Kyn25"><i class="fa-brands fa-youtube"></i></a>
+                     <a href="https://www.linkedin.com/in/nykosh-magsalin-611a6535b/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://www.instagram.com/xnyx2525?igsh=bDN2bXB3YTlkb3Ez"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.tiktok.com/@kyn_kyu?_t=ZP-8w99CDpG8Uh&_r=1S"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                            <div class="btn-group">
+                                <a href="NykoshCV.pdf" class="btn active">Resume</a>
+                            </div>
+            </div>
+        </div>
+    </div>
+    
+   </div>
+        
+    <!------------------------------------ About --------------------------------------------------->
+    <div class="about-col-2">
+        <div class="sub-title-container">
+        <i class="fa-solid fa-circle-user"></i>
+         <h1 class="sub-title"> <span id="span">About</span> Me</h1>
+        </div>
+    <div id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="123.jpg" alt="Profile Image">
+                 <div class="descrip-box">
+                 <p class="descrip">An aspiring game developer with a passion for creating immersive worlds, engaging gameplay, and memorable player experiences. Whether it's through storytelling, mechanics, or design, I love exploring how games can inspire, challenge, and connect people. I’m currently building my skills in game design, programming (Phyton, Javascript, React, C++, Unity, and Unreal Engine), and digital art. I enjoy learning new tools and collaborating with others to bring creative ideas to life. My goal is to contribute to projects that push boundaries and leave a lasting impression on players. In addition to game development, I also have some experience with video editing especially creating AMVs (Anime Music Videos). Working on AMVs has helped me develop a good eye for timing, pacing, and emotional impact, which I aim to carry into my work as a developer, particularly in storytelling and cinematic moments. Right now, I’m working on small indie projects to expand my portfolio and deepen my understanding of the development process from concept to final build. I’m always open to feedback, mentorship, and connecting with fellow developers and creatives.</p>
+                 <br>
+                 <br>
+            <p><span id="span">Email</span>: 25niiikuz@gmail.com</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------ SA --------------------------------------------------->
+<div id="skills">
+    <div class="sa-container">
+        <i class="fa-solid fa-keyboard"></i>
+        <h1 class="sub-title"><span id="span">Skills</span></h1>
+    </div>
+    <div class="skill-grid">
+        <div class="grid" onclick="toggleVideos('premiere')">
+            <img src="pr.png" alt="Adobe Premiere">
+            <span>Adobe Premiere</span>
+        </div>
+        <div class="grid" onclick="toggleVideos('afterEffects')">
+            <img src="ae.png" alt="After Effects">
+            <span>After Effects</span>
+        </div>
+        <div class="grid" onclick="toggleVideos('html5')">
+            <img src="html.png" alt="HTML5">
+            <span>HTML5</span>
+        </div>
+        <div class="grid" onclick="toggleVideos('css3')">
+            <img src="CSS.png" alt="CSS3">
+            <span>CSS3</span>
+        </div>
+        <div class="grid" onclick="toggleVideos('cpp')">
+            <img src="cpp.png" alt="Basic C++">
+            <span>Basic C++</span>
+        </div>
+    </div>
+    <div id="premiereVideos" class="video-container" style="display:none;">
+        <h3>Adobe Premiere Videos</h3>
+        
+        <video width="320" height="240" controls>
+            <source src="assets/hikigaya x yukino.mp4" type="video/mp4">
+            
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/cradles.mp4" type="video/mp4">
+            
+        </video>
+         <video width="320" height="240" controls>
+            <source src="assets/maririn.mp4" type="video/mp4">
+            
+        </video>
+         <video width="320" height="240" controls>
+            <source src="assets/fashion week.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+     <div id="afterEffectsVideos" class="video-container" style="display:none;">
+        <h3>After Effects Videos</h3>
+        <video width="320" height="240" controls>
+            <source src="assets/ai hoshino.mp4" type="video/mp4">
+        
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/mao mao x fern.mp4" type="video/mp4">
+           
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/maomao mograph v1.2.mp4" type="video/mp4">
+           
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/nakano N.mp4" type="video/mp4">
+           
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/mograph.mp4" type="video/mp4">
+           
+        </video>
+        <video width="320" height="240" controls>
+            <source src="assets/yamada.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+</div>
+<!------------------------------------Education--------------------------------------------------->
+<div id="education">
+    <div class="e-container">
+    <div class="edu-title">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1><span id="span">Education</span></h1>
+    </div>
+    <h3 id="quote">"THE FUTURE BELONGS TO THOSE WHO BELIEVE IN THE BEAUTY OF THEIR DREAMS"</h3>
+</div>
+    <div class="education-grid">
+        <div class="education-item">
+            <i class="fa-solid fa-school"></i>
+            <h2>Elementary School</h2>
+            <img src="assets/school-logo.jpg" onclick="toggleEducation('elementary')">
+            <ul id="elementary" class="education-details" style="display:none;">
+                <li><span id="span">2009-2014</span><br>St. Peter Catholic School of Mulanay</li>
+            </ul>
+        </div>
+        <div class="education-item">
+            <i class="fa-solid fa-school"></i>
+            <h2>Middle School</h2>
+            <img src="assets/school-logo.jpg" onclick="toggleEducation('middle')">
+            <ul id="middle" class="education-details" style="display:none;">
+                <li><span id="span">2014-2017</span><br>St. Peter Catholic School of Mulanay</li>
+            </ul>
+        </div>
+        <div class="education-item">
+            <i class="fa-solid fa-school"></i>
+            <h2>High School</h2>
+            <img src="assets/school-logo.jpg" onclick="toggleEducation('highschool1')">
+            <ul id="highschool1" class="education-details" style="display:none;">
+                <li><span id="span">2017-2018</span><br>St. Peter Catholic School of Mulanay</li>
+            </ul>
+            <img src="assets/school-logo2.jpg" onclick="toggleEducation('highschool2')">
+            <ul id="highschool2" class="education-details" style="display:none;">
+                <li><span id="span">2018-2021</span><br>Centennial High School</li>
+            </ul>
+        </div>
+        <div class="education-item">
+            <i class="fa-solid fa-school"></i>
+            <h2>College</h2>
+            <img src="assets/school-logo3.jpg" onclick="toggleEducation('college')">
+            <ul id="college" class="education-details" style="display:none;">
+                <li><span id="span">2022-Present</span><br>Hill College</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!------------------------------------certs-------------------------------------------------->
+<div id="certs">
+  <div class="c-container">
+  <div class="cert-title">
+    <i class="fa-solid fa-certificate"></i>
+    <h1><span id="span">Certificates</span></h1>
+  </div>
+</div>
+
+
+  <div class="cert-img-container">
+    <img src="cert.jpg" alt="Certificate">
+  </div>
+  
+
+  <!--<div class="cert-img-container">
+    <img src="#" alt="Certificate">
+  </div>-->
+</div>
+<!------------------------------------contact--------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <div class="contact-title">
+                    <i class="fa-solid fa-phone"></i>
+                    <h1><span id="span">Contact Me</span></h1>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name, currently not working" required>
+                    <input type="email" name="email" placeholder="Your Email, currently not working" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message, currently not working"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------footer-------------------------------------------------->
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <p id="span">Quick Links</p>
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certs">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <p><i class="fa-solid fa-phone"></i> <span>817-647-2030</span></p>
+      <p><i class="fa-solid fa-envelope"></i> <span>25niiikuz@gmail.com</span></p>
+      <div class="social">
+        <a href="https://www.youtube.com/@Kyn25" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/nykosh-magsalin-611a6535b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/xnyx2525" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@kyn_kyu" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!------------------------------------script--------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script>
+    function toggleEducation(level) {
+        var educationDetails = document.getElementById(level);
+        educationDetails.style.display = (educationDetails.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function toggleVideos(id) {
+        const containers = document.querySelectorAll('.video-container');
+        containers.forEach(container => {
+            if (container.id === id + 'Videos') {
+                const isVisible = container.style.display === 'block';
+                container.style.display = isVisible ? 'none' : 'block';
+                if (!isVisible) {
+                    container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            } else {
+                container.style.display = 'none';
+            }
+        });
+    }
+
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+
+    togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    });
+
+    var typed = new Typed(".input", {
+        strings: ["Game Developer", "Software Engineer", "Web Developer"],
+        typeSpeed: 70,
+        backSpeed: 55,
+        loop: true
+    });
+</script>
+</body>
+</html>
