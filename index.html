@@ -6,12 +6,18 @@
     <title>Document</title>
      <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1bfa72dd94.js" crossorigin="=anonymous"></script>
+    <script type="text/Javascript" src="darkmode.js" defer></script>
 </head>
 <body>
+    
     <header>
+        <button id="theme-switch">
+                       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    </button>
             <div class="logo">
                 <i class="fa-solid fa-n"></i>
-                <div class="logo-text"><span id="n">N</span>ykosh</div>
+                <div class="logo-text"><span class="span">N</span>ykosh</div>
             </div>
             <nav>
                 <div class="togglebtn">
@@ -23,15 +29,30 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</span></a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#certs">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    
                      <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
+                
             </nav>
         </header>
-    <div id="header" class="hero-header">
+    <section id="header" class="hero-header">
+        <div class="box">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	    </div>
     <div class="wrapper">
         <div class="container">
             <div class="hero-pic">
@@ -39,7 +60,7 @@
             </div>
             <div class="hero-text">
                 <p id="open" style="position: relative;">Hi! I am</p>
-                <h1 id="name"><span id="span">N</span>ykosh</h1>
+                <h1 id="name"><span class="span">N</span>ykosh</h1>
                 <br>
                 <p>
                     Aspiring <span class="input"></span>
@@ -55,7 +76,7 @@
                             </div>
             </div>
         </div>
-    </div>
+    </section>
     
    </div>
         
@@ -63,18 +84,18 @@
     <div class="about-col-2">
         <div class="sub-title-container">
         <i class="fa-solid fa-circle-user"></i>
-         <h1 class="sub-title"> <span id="span">About</span> Me</h1>
+         <h1 class="sub-title"> <span class="span">About</span> Me</h1>
         </div>
     <div id="about" class="about-section">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="123.jpg" alt="Profile Image">
+                <img src="a1.jpg" alt="Profile Image">
                  <div class="descrip-box">
                  <p class="descrip">An aspiring game developer with a passion for creating immersive worlds, engaging gameplay, and memorable player experiences. Whether it's through storytelling, mechanics, or design, I love exploring how games can inspire, challenge, and connect people. I’m currently building my skills in game design, programming (Phyton, Javascript, React, C++, Unity, and Unreal Engine), and digital art. I enjoy learning new tools and collaborating with others to bring creative ideas to life. My goal is to contribute to projects that push boundaries and leave a lasting impression on players. In addition to game development, I also have some experience with video editing especially creating AMVs (Anime Music Videos). Working on AMVs has helped me develop a good eye for timing, pacing, and emotional impact, which I aim to carry into my work as a developer, particularly in storytelling and cinematic moments. Right now, I’m working on small indie projects to expand my portfolio and deepen my understanding of the development process from concept to final build. I’m always open to feedback, mentorship, and connecting with fellow developers and creatives.</p>
                  <br>
                  <br>
-            <p><span id="span">Email</span>: 25niiikuz@gmail.com</p>
+            <p><span class="span">Email</span>: 25niiikuz@gmail.com</p>
             </div>
             </div>
         </div>
@@ -84,36 +105,52 @@
 <div id="skills">
     <div class="sa-container">
         <i class="fa-solid fa-keyboard"></i>
-        <h1 class="sub-title"><span id="span">Skills</span></h1>
+        <h1 class="sub-title"><span class="span">Skills</span></h1>
     </div>
     <div class="skill-grid">
-        <div class="grid" onclick="toggleVideos('premiere')">
+        <div class="grid">
             <img src="pr.png" alt="Adobe Premiere">
             <span>Adobe Premiere</span>
-            <h5>(Click Me)</h5>
         </div>
-        <div class="grid" onclick="toggleVideos('afterEffects')">
+        <div class="grid">
             <img src="ae.png" alt="After Effects">
             <span>After Effects</span>
-            <h5>(Click Me)</h5>
         </div>
-        <div class="grid" onclick="toggleVideos('html5')">
+        <div class="grid">
             <img src="html.png" alt="HTML5">
             <span>HTML5</span>
         </div>
-        <div class="grid" onclick="toggleVideos('css3')">
+        <div class="grid">
             <img src="CSS.png" alt="CSS3">
             <span>CSS3</span>
         </div>
-        <div class="grid" onclick="toggleVideos('cpp')">
+        <div class="grid">
+            <img src="JavaScript-logo.png" alt="CSS3">
+            <span>Javascript</span>
+        </div>
+        <div class="grid" >
+            <img src="React_Logo_SVG.svg.png" alt="CSS3">
+            <span>React</span>
+        </div>
+        <div class="grid">
             <img src="cpp.png" alt="Basic C++">
             <span>Basic C++</span>
         </div>
     </div>
-    <div id="premiereVideos" class="video-container" style="display:none;">
-        <h3>Adobe Premiere Videos</h3>
-        
-        <video width="320" height="240" controls>
+</div>
+    <!-----------------------------Projects------------------------------------------------------------>
+    <div id="projects">
+        <div class="p-container">
+                <i class="fa-solid fa-keyboard"></i>
+        <h1 class="sub-title"><span class="span">Projects</span></h1>
+    
+        </div>
+         <div class="pr-proj">
+            <img src="pr.png" alt="Adobe Premiere">
+            <span>Adobe Premiere</span>
+        </div>
+        <div class="pr-works">
+            <video width="320" height="240" controls>
             <source src="assets/hikigaya x yukino.mp4" type="video/mp4">
             
         </video>
@@ -129,10 +166,13 @@
             <source src="assets/fashion week.mp4" type="video/mp4">
             
         </video>
-    </div>
-     <div id="afterEffectsVideos" class="video-container" style="display:none;">
-        <h3>After Effects Videos</h3>
-        <video width="320" height="240" controls>
+        </div>
+        <div class="ae-proj">
+            <img src="ae.png" alt="After Effects">
+            <span>After Effects</span>
+        </div>
+        <div class="ae-works">
+            <video width="320" height="240" controls>
             <source src="assets/ai hoshino.mp4" type="video/mp4">
         
         </video>
@@ -156,14 +196,16 @@
             <source src="assets/yamada.mp4" type="video/mp4">
            
         </video>
+        </div>
+        
     </div>
-</div>
+
 <!------------------------------------Education--------------------------------------------------->
 <div id="education">
     <div class="e-container">
     <div class="edu-title">
         <i class="fa-solid fa-graduation-cap"></i>
-        <h1><span id="span">Education</span></h1>
+        <h1><span class="span">Education</span></h1>
     </div>
     <h3 id="quote">"THE FUTURE BELONGS TO THOSE WHO BELIEVE IN THE BEAUTY OF THEIR DREAMS"</h3>
 </div>
@@ -172,36 +214,36 @@
             <i class="fa-solid fa-school"></i>
             <h2>Elementary School</h2>
             <img src="assets/school-logo.jpg" onclick="toggleEducation('elementary')">
-            <ul id="elementary" class="education-details" style="display:none;">
-                <li><span id="span">2009-2014</span><br>St. Peter Catholic School of Mulanay</li>
+            <ul id="elementary" class="education-details" >
+                <li><span class="span">2009-2014</span><br>St. Peter Catholic School of Mulanay</li>
             </ul>
         </div>
         <div class="education-item">
             <i class="fa-solid fa-school"></i>
             <h2>Middle School</h2>
             <img src="assets/school-logo.jpg" onclick="toggleEducation('middle')">
-            <ul id="middle" class="education-details" style="display:none;">
-                <li><span id="span">2014-2017</span><br>St. Peter Catholic School of Mulanay</li>
+            <ul id="middle" class="education-details" >
+                <li><span class="span">2014-2017</span><br>St. Peter Catholic School of Mulanay</li>
             </ul>
         </div>
         <div class="education-item">
             <i class="fa-solid fa-school"></i>
             <h2>High School</h2>
             <img src="assets/school-logo.jpg" onclick="toggleEducation('highschool1')">
-            <ul id="highschool1" class="education-details" style="display:none;">
-                <li><span id="span">2017-2018</span><br>St. Peter Catholic School of Mulanay</li>
+            <ul id="highschool1" class="education-details" >
+                <li><span class="span">2017-2018</span><br>St. Peter Catholic School of Mulanay</li>
             </ul>
             <img src="assets/school-logo2.jpg" onclick="toggleEducation('highschool2')">
-            <ul id="highschool2" class="education-details" style="display:none;">
-                <li><span id="span">2018-2021</span><br>Centennial High School</li>
+            <ul id="highschool2" class="education-details" >
+                <li><span class="span">2018-2021</span><br>Centennial High School</li>
             </ul>
         </div>
         <div class="education-item">
             <i class="fa-solid fa-school"></i>
             <h2>College</h2>
             <img src="assets/school-logo3.jpg" onclick="toggleEducation('college')">
-            <ul id="college" class="education-details" style="display:none;">
-                <li><span id="span">2022-Present</span><br>Hill College</li>
+            <ul id="college" class="education-details">
+                <li><span class="span">2022-Present</span><br>Hill College</li>
             </ul>
         </div>
     </div>
@@ -211,13 +253,17 @@
   <div class="c-container">
   <div class="cert-title">
     <i class="fa-solid fa-certificate"></i>
-    <h1><span id="span">Certificates</span></h1>
+    <h1><span class="span">Certificates</span></h1>
   </div>
 </div>
 
 
   <div class="cert-img-container">
     <img src="cert.jpg" alt="Certificate">
+  </div>
+
+  <div class="cert-img-container">
+    <img src="html-cert.jpg" alt="Certificate">
   </div>
   
 
@@ -232,7 +278,7 @@
             <div class="contact-left">
                 <div class="contact-title">
                     <i class="fa-solid fa-phone"></i>
-                    <h1><span id="span">Contact Me</span></h1>
+                    <h1><span class="span">Contact </span>Me</h1>
                 </div>
             </div>
 
@@ -251,7 +297,7 @@
 <footer>
   <div class="footer-container">
     <div class="footer-left">
-      <p id="span">Quick Links</p>
+      <p class="span">Quick Links</p>
       <ul>
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -273,9 +319,13 @@
       </div>
     </div>
   </div>
+  <a href="#" class="to-top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
 </footer>
 
 <!------------------------------------script--------------------------------------------------->
+<script src="ScrollToTop.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
 <script>
     function toggleEducation(level) {
