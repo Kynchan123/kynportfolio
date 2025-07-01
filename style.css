@@ -606,6 +606,49 @@ p{
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
 }
+.js-proj{
+    background-color: var(--section-color);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;  
+    height: 180px; 
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+}
+.js-works a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.js-works a:hover {
+    transform: scale(1.05);
+}
+
+.js-works img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.js-works p {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
 
 
 
@@ -656,6 +699,7 @@ p{
 
 .education-item {
     background-color: var(--section-color);
+    display: flex;
     border-radius: 8px;
     padding: 20px;
     width: calc(25% - 20px); 
@@ -686,6 +730,8 @@ p{
     margin: 0;
     color: var(--text-color);
     font-size: 16px;
+    display: flex;
+    text-align: center;
 }
 
 .education-details li {
@@ -730,10 +776,13 @@ h3{
 
 .cert-img-container {
   display: flex;
+  border-radius: 8px;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
   width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .cert-img-container img {
@@ -742,6 +791,7 @@ h3{
   aspect-ratio: 16 / 9; 
   object-fit: cover;
   border-radius: 10px;
+  border: 3px solid var(--text-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
