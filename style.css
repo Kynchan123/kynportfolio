@@ -574,6 +574,26 @@ p{
     gap: 15px;
     width: 100%;
 }
+.video-wrapper {
+  width: 100%;
+  max-width: 480px;       
+  aspect-ratio: 16 / 9;   
+  margin: 0 auto;         
+}
+.pr-works,
+.ae-works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;     
+}
 .pr-proj {
     background-color: var(--section-color);
     border-radius: 8px;
