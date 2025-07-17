@@ -546,6 +546,8 @@ p{
     color: var(--text-color);
 }
 
+
+
 .skill-grid {
     display: flex;
     gap: 20px;
@@ -1159,6 +1161,10 @@ nav ul .fas{
   justify-content: center;
   margin: 0 auto;
 }
+ .container .hero-pic {
+    width: 350px;
+    height: 350px;
+  }
 
 .hero-pic img {
   width: 100%;
