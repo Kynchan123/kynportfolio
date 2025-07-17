@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nykosh Portfolio</title>
      <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1bfa72dd94.js" crossorigin="=anonymous"></script>
     <script type="text/Javascript" src="darkmode.js" defer></script>
@@ -34,7 +34,7 @@
                     <li><a href="#certs">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                     
-                     <i class="fas fa-times" onclick="closemenu()"></i>
+                     <i class="fas fa-times" aria-label="Open menu" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
                 
@@ -56,14 +56,16 @@
     <div class="wrapper">
         <div class="container">
             <div class="hero-pic">
-                <img src="aa.jpg">
+                <img src="assets/aa.jpg">
             </div>
             <div class="hero-text">
                 <p id="open" style="position: relative;">Hi! I am</p>
                 <h1 id="name"><span class="span">N</span>ykosh</h1>
                 <br>
-                <p>
-                    Aspiring <span class="input"></span>
+                <p id="aspiring-text">
+                    Aspiring <span style="display:inline-block; min-width:320px; overflow:hidden;">
+    <span class="input"></span>
+  </span>
                 </p>
                 <div class="social">
                      <a href="https://www.youtube.com/@Kyn25"><i class="fa-brands fa-youtube"></i></a>
@@ -81,7 +83,7 @@
    </div>
         
     <!------------------------------------ About --------------------------------------------------->
-    <div class="about-col-2">
+    <div class="about-col-2 reveal">
         <div class="sub-title-container">
         <i class="fa-solid fa-circle-user"></i>
          <h1 class="sub-title"> <span class="span">About</span> Me</h1>
@@ -90,7 +92,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="a1.jpg" alt="Profile Image">
+                <img src="assets/a1.jpg" alt="Profile Image">
                  <div class="descrip-box">
                  <p class="descrip">I'm an aspiring game developer passionate about creating immersive worlds, engaging gameplay, and memorable player experiences. I enjoy exploring how games can inspire, challenge, and connect people through storytelling, mechanics, and design.
 
@@ -113,31 +115,31 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
     </div>
     <div class="skill-grid">
         <div class="grid">
-            <img src="pr.png" alt="Adobe Premiere">
+            <img src="assets/pr.png" alt="Adobe Premiere">
             <span>Adobe Premiere</span>
         </div>
         <div class="grid">
-            <img src="ae.png" alt="After Effects">
+            <img src="assets/ae.png" alt="After Effects">
             <span>After Effects</span>
         </div>
         <div class="grid">
-            <img src="html.png" alt="HTML5">
+            <img src="assets/html.png" alt="HTML5">
             <span>HTML5</span>
         </div>
         <div class="grid">
-            <img src="CSS.png" alt="CSS3">
+            <img src="assets/CSS.png" alt="CSS3">
             <span>CSS3</span>
         </div>
         <div class="grid">
-            <img src="JavaScript-logo.png" alt="JavaScript">
+            <img src="assets/JavaScript-logo.png" alt="JavaScript">
             <span>Javascript</span>
         </div>
         <div class="grid" >
-            <img src="React_Logo_SVG.svg.png" alt="React">
+            <img src="assets/React_Logo_SVG.svg.png" alt="React">
             <span>React</span>
         </div>
         <div class="grid">
-            <img src="cpp.png" alt="Basic C++">
+            <img src="assets/cpp.png" alt="Basic C++">
             <span>Basic C++</span>
         </div>
     </div>
@@ -150,7 +152,7 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
     
         </div>
          <div class="pr-proj">
-            <img src="pr.png" alt="Adobe Premiere">
+            <img src="assets/pr.png" alt="Adobe Premiere">
             <span>Adobe Premiere</span>
         </div>
         <div class="pr-works">
@@ -176,7 +178,7 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
         </div>
         </div>
         <div class="ae-proj">
-            <img src="ae.png" alt="After Effects">
+            <img src="assets/ae.png" alt="After Effects">
             <span>After Effects</span>
         </div>
         <div class="ae-works">
@@ -212,12 +214,12 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
             </div>
         </div>
         <div class="js-proj">
-            <img src="JavaScript-logo.png" alt="Javascript">
+            <img src="assets/JavaScript-logo.png" alt="Javascript">
             <span>Javascript</span>
         </div>
         <div class="js-works">
     <a href="https://kynchan123.github.io/weather-app/" target="_blank">
-        <img src="weather-app.png" alt="Weather App" >
+        <img src="assets/weather-app.png" alt="Weather App" >
         <p>Weather App</p>
     </a>
 </div>
@@ -284,13 +286,16 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
 
 
   <div class="cert-img-container">
-    <img src="cert.jpg" alt="Certificate">
+    <img src="assets/cert.jpg" alt="Certificate">
   </div>
 
   <div class="cert-img-container">
-    <img src="html-cert.jpg" alt="Certificate">
+    <img src="assets/html-cert.jpg" alt="Certificate">
   </div>
   
+   <div class="cert-img-container">
+    <img src="assets/css-cert.jpg" alt="Certificate">
+  </div>
 
 </div>
 <!------------------------------------contact--------------------------------------------------->
@@ -305,12 +310,16 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
             </div>
 
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name, currently not working" required>
-                    <input type="email" name="email" placeholder="Your Email, currently not working" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message, currently not working"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+                <form id="contact-form" action="https://formspree.io/f/movlqzln" method="POST">
+  <label>Your email:
+    <input type="email" name="email" required>
+  </label>
+  <label>Your message:
+    <textarea name="message" required></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
+
             </div>
         </div>
     </div>
@@ -348,6 +357,8 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
 
 <!------------------------------------script--------------------------------------------------->
 <script src="ScrollToTop.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
 <script>
     function toggleEducation(level) {
@@ -379,11 +390,13 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
     });
 
     var typed = new Typed(".input", {
-        strings: ["Game Developer", "Software Engineer", "Web Developer"],
-        typeSpeed: 70,
-        backSpeed: 55,
-        loop: true
-    });
+  strings: ["Game Developer", "Software Engineer", "Web Developer"],
+  typeSpeed: 70,
+  backSpeed: 55,
+  loop: true,
+  showCursor: true,
+  cursorChar: "|",
+});
     
 
         var sidemenu = document.getElementById("sidemenu");
@@ -394,7 +407,37 @@ Right now, I'm working on small indie projects to grow my portfolio and better u
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
+const sr = ScrollReveal({
+  reset: true,
+  distance: '30px',
+  duration: 1500,
+  delay: 100,
+  easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
+  mobile: true 
+});
 
+sr.reveal('.about-section', { origin: 'top' });
+sr.reveal('#skills', { origin: 'top' });
+sr.reveal('#projects', { origin: 'top' });
+sr.reveal('#education', { origin: 'top' });
+sr.reveal('#certs', { origin: 'top' });
+sr.reveal('#contact', { origin: 'top' });
+        
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      window.location.href = 'thank-you.html';
+    } else {
+      alert('Oops! There was a problem.');
+    }
+  });  
   
 </script>
 </body>
